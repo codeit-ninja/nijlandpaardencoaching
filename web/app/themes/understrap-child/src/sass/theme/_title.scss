@@ -1,0 +1,17 @@
+.page-title-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: $dark;
+    min-height: 11rem;
+    
+    // @include gradient-x(#4CDBB6, #F9F871);
+
+    .page-title {
+        display: block;
+        font-weight: 500;
+        font-size: 2rem;
+        color: var(--bs-white);
+        padding: 1.35rem 0;
+    }
+}

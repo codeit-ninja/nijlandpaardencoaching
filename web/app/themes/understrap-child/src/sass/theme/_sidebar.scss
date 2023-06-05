@@ -1,0 +1,30 @@
+#left-sidebar {
+    // ss
+}
+
+#sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $gray-600;
+        padding: 1rem 1.35rem;
+    }
+
+    .page_item {
+        background-color: $gray-100;
+        border-radius: $border-radius;
+    }
+
+    .current_page_item {
+        background-color: $gray-900;
+
+        a {
+            color: $white;
+            font-weight: 500;
+        }
+    }
+}

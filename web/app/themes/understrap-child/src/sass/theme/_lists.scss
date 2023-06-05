@@ -1,0 +1,67 @@
+.npc-list,
+.npc-list li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.npc-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+    gap: 1rem;
+
+    li {
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+    }
+
+    li::before {
+        position: relative;
+        display: inline-block;
+        top: .1rem;
+        left: -.5rem;
+        content: "";
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="'+ encodecolor(darken($primary, 20)) +'" class="bi bi-check-circle-fill" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/> </svg>');
+        background-repeat: no-repeat;
+        background-size: 1.5rem 1.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+ul:not(.navbar-nav, .dropdown, .dropdown-menu, .menu, .npc-list) {
+    list-style: none;
+
+    li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+
+        &::before,
+        &::after {
+            position: absolute;
+            display: inline-block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font: var(--fa-font-duotone);
+            left: -1rem;
+            margin-top: 3px;
+            transform: rotate(45deg);
+        }
+
+        &::before {
+            content: "\f076";
+            color: $primary;
+        }
+
+        &::after {
+            content: "\f076\f076";
+            color: tint-color($primary, 30%);
+        }
+    }
+}

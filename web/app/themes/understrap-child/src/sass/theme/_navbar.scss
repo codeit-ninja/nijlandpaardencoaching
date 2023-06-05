@@ -1,0 +1,54 @@
+#main-nav {
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 0 .75rem -.3rem $gray-700;
+
+    --bs-navbar-padding-y: .75rem;
+    --bs-navbar-padding-x: .75rem;
+    
+    --bs-navbar-nav-link-padding-x: 1.35rem;
+    --bs-navbar-nav-link-padding-y: 1rem;
+}
+
+// Fix position if admin bar is visible
+.admin-bar {
+    #main-nav {
+        top: 32px;
+    }
+}
+
+.nav {
+    &-item {
+        font-weight: 500;
+
+        &.active .nav-link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            // background-color: tint-color($primary, 60%);
+            // border-radius: $border-radius;
+            //color: shade-color($primary, 50%);
+            color: $primary;
+
+            &::before {
+                position: absolute;
+                display: inline-block;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                font: var(--fa-font-solid);
+                content: "\f076";
+                margin-top: 3px;
+                transform: rotate(45deg);
+                left: -.3rem;
+            }
+        }
+    }
+
+    &-link {
+        color: $gray-800;
+    }
+}

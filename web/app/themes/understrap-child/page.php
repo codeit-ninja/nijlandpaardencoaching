@@ -16,7 +16,6 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
-
 ?>
 
 <div class="wrapper" id="page-wrapper">
@@ -54,6 +53,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- .row -->
 
 	</div><!-- #content -->
+
+    <?php get_template_part( 'global-templates/extra', 'content' ); ?>
 
 </div><!-- #page-wrapper -->
 

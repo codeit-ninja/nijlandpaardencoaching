@@ -1,7 +1,91 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: $font-family-serif;
+}
+
 h2, .h2 {
     margin-bottom: 1.3rem;
 }
 
+h3, .h3 {
+    margin-bottom: 1rem;
+}
+
 h4 {
     font-family: $font-family-serif;
+}
+
+a:not(.nav-link, .dropdown-item) {
+    text-decoration: none;
+    border-bottom: 1px dashed $primary;
+}
+
+#the-quote blockquote {
+    display: inline-block;
+    background-color: tint-color($primary, 80%);
+    margin-bottom: 0 !important;
+    padding: 1rem 1.5rem;
+    // border-radius: $border-radius;
+    border-left: 5px solid shade-color($primary, 15%);
+}
+
+blockquote {
+    font-style: italic;
+    font-weight: 500;
+    color: shade-color($primary, 45%);
+    
+    &::before {
+        position: relative;
+        display: inline-block;
+        top: .1rem;
+        margin-right: 0.5rem;
+        content: "";
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="'+ encodecolor($gray-600) +'" class="bi bi-quote" viewBox="0 0 16 16"> <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/> </svg>');
+        background-repeat: no-repeat;
+        background-size: 1.5rem 1.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+img {
+    @extend .rounded;
+
+    &.wp-post-image {
+        mix-blend-mode: luminosity;
+    }
+}
+
+picture:has(.wp-post-image) {
+    background: rgba(tint-color($primary, 40%), .2);
+}
+
+picture {
+    position: relative;
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: var(--bs-border-radius);
+
+    &.no-outline {
+        margin-right: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    &:not(.no-outline) {
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            border: 1px dashed $gray-900;
+            border-radius: var(--bs-border-radius);
+            top: .75rem;
+            left: .75rem;
+            z-index: -1;
+        }
+    }
 }

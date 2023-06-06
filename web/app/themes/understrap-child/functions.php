@@ -157,3 +157,17 @@ function the_quote()
 
     echo '<blockquote>'. $quotes[rand(0, (count($quotes) - 1))]['text'] .'</blockquote>';
 }
+
+/**
+ * Disable the block editor when specified
+ */
+function disable_block_editor_check( $use_block_editor, WP_Post $post ) 
+{
+
+    if( get_field('disable_gutenberg', $post->ID) ) {
+        return false;
+    }
+
+    return $use_block_editor;
+}
+add_filter( 'use_block_editor_for_post', 'disable_block_editor_check', 10, 2 );

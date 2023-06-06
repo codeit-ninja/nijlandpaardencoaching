@@ -18,8 +18,18 @@ body {
     }
 }
 
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
 #content {
     position: relative;
+}
+
+#page-wrapper {
+    flex-grow: 1;
 }
 
 .content-area {
@@ -147,33 +157,6 @@ body {
     }
 }
 
-#the-quote {
-    blockquote {
-        display: inline-block;
-        background-color: tint-color($primary, 80%);
-        margin-bottom: 0 !important;
-        font-style: italic;
-        font-weight: 500;
-        padding: 1rem 1.5rem;
-        color: shade-color($primary, 45%);
-        // border-radius: $border-radius;
-        border-left: 5px solid shade-color($primary, 15%);
-
-        &::before {
-            position: relative;
-            display: inline-block;
-            top: .1rem;
-            left: -.5rem;
-            content: "";
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="'+ encodecolor($gray-600) +'" class="bi bi-quote" viewBox="0 0 16 16"> <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/> </svg>');
-            background-repeat: no-repeat;
-            background-size: 1.5rem 1.5rem;
-            height: 1.5rem;
-            width: 1.5rem;
-        }
-    }
-}
-
 .contact-options {
     gap: 1rem;
 
@@ -193,5 +176,13 @@ body {
         &:hover {
             color: $white;
         }
+    }
+}
+
+.bg-primary {
+    a {
+        color: shade-color($primary, 45%);
+        text-decoration: none;
+        border-bottom: 1px dashed shade-color($primary, 45%);
     }
 }

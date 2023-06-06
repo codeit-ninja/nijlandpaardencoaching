@@ -35,18 +35,18 @@ body {
 .content-area {
     h2 {
         position: relative;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
-        &::before {
-            content: " ";
-            position: absolute;
-            background-image: url(/app/themes/understrap-child/src/assets/underline.svg);
-            background-repeat: no-repeat;
-            height: 30px;
-            width: 200px;
-            bottom: -40px;
-            left: 0px;
-        }
+        // &::before {
+        //     content: " ";
+        //     position: absolute;
+        //     background-image: url(/app/themes/understrap-child/src/assets/underline.svg);
+        //     background-repeat: no-repeat;
+        //     height: 30px;
+        //     width: 200px;
+        //     bottom: -40px;
+        //     left: 0px;
+        // }
     }
 
     p {

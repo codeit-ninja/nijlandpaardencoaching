@@ -21,7 +21,7 @@ h4 {
 
 a:not(.nav-link, .dropdown-item) {
     text-decoration: none;
-    border-bottom: 1px dashed $primary;
+    border-bottom: 1px dashed inherit;
 }
 
 #the-quote blockquote {

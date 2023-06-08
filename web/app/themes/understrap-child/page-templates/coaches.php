@@ -40,9 +40,11 @@ $choaches = get_field('coaches');
                     <div class="tab-content">
                         <?php foreach( $choaches as $key => $coach ) : ?>
                             <div class="tab-pane <?php echo $key === 0 ? 'show active' : '' ?>" id="coach-<?php echo $key; ?>" tabindex="0">
-                                <picture style="float: left;" class="rounded">
-                                    <img src="<?php echo $coach['photo']['sizes']['medium']; ?>" style="float: left;" class="rounded" />
-                                </picture>
+                                   
+                                <?php 
+                                get_template_part('global-templates/inline', 'image', array('post_ID' => $coach['photo']['ID']));
+                                ?>
+
                                 <h3 class="mb-4"><?php echo $coach['name']; ?></h3>
                                 <p>
                                     <?php echo $coach['about_me']; ?>

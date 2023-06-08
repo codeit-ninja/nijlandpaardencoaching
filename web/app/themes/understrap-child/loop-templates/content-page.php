@@ -17,9 +17,7 @@ $outline_disabled = get_field('disable_image_outline');
 
 		<?php
         if( has_post_thumbnail() ) {
-            echo '<picture style="float: left;" class="'. ($outline_disabled ? 'no-outline' : '') .'">';
-            the_post_thumbnail([370]);
-            echo '</picture>';
+            get_template_part('global-templates/inline', 'image', array('post_ID' => get_the_ID()));
         }
         
 		the_content();

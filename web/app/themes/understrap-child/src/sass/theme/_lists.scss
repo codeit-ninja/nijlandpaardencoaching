@@ -8,7 +8,6 @@
 .npc-list {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
     font-weight: 500;
     gap: 1rem;
 
@@ -38,6 +37,18 @@
     li::after {
         content: "\e404";
     }
+
+    @include media-breakpoint-up(sm) {
+        font-size: 1.2rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.3rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.4rem;
+    }
 }
 
 ul:not(.navbar-nav, .dropdown, .dropdown-menu, .menu, .npc-list, .nav) {
@@ -46,7 +57,6 @@ ul:not(.navbar-nav, .dropdown, .dropdown-menu, .menu, .npc-list, .nav) {
     li {
         position: relative;
         display: flex;
-        align-items: center;
         padding-left: 1rem;
 
         &::before,
@@ -55,20 +65,20 @@ ul:not(.navbar-nav, .dropdown, .dropdown-menu, .menu, .npc-list, .nav) {
             display: inline-block;
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
-            font: var(--fa-font-duotone);
+            font: var(--fa-font-regular);
+            font-size: 1rem;
             left: -1rem;
-            margin-top: 3px;
-            transform: rotate(45deg);
+            top: 5px;
+            // transform: rotate(45deg);
         }
 
-        &::before {
-            content: "\f076";
-            color: $primary;
-        }
+        // &::before {
+        //     content: "\f076";
+        //     color: $primary;
+        // }
 
         &::after {
-            content: "\f076\f076";
-            color: tint-color($primary, 30%);
+            content: "\f6f0";
         }
     }
 }

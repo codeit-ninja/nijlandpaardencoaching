@@ -171,3 +171,15 @@ function disable_block_editor_check( $use_block_editor, WP_Post $post )
     return $use_block_editor;
 }
 add_filter( 'use_block_editor_for_post', 'disable_block_editor_check', 10, 2 );
+
+/**
+ * Remove breadcrumbs links
+ */
+function remove_breadcrumb_links( $link_output , $link ) {
+    if( get_pages( array( 'child_of' => $link['id'] ) ) ) {
+        return '<span>'. $link['text'] .'</span>';
+    }
+
+    return $link_output;
+}
+add_filter('wpseo_breadcrumb_single_link' ,'remove_breadcrumb_links', 10 ,2);

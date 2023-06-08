@@ -24,4 +24,35 @@
             color: $white;
         }
     }
+
+    &-group-cta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: .5rem;
+        margin: 2rem 0 0;
+    }
+
+    &-cta {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        background-color: tint-color($dark, 5%);
+        color: tint-color($dark, 55%);
+        border: 2px solid tint-color($dark, 35%);
+        padding: 1.3rem 2rem;
+        border-radius: 0;
+        font-size: 1.4rem;
+        font-weight: 500;
+
+        [class^="fa-"] {
+            color: tint-color($dark, 65%);
+        }
+
+        &:hover {
+            color: $white;
+            border-color: $white;
+            background-color: inherit;
+        }
+    }
 }

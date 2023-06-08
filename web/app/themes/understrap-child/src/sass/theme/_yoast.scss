@@ -1,8 +1,11 @@
 #breadcrumbs {
     margin: 2rem 0;
+    color: var(--bs-gray-300);
+    font-weight: 500;
 
-    span span {
-        font-weight: 500;
-        color: var(--bs-gray-500);
+    span {
+        span:last-child {
+            font-weight: 400;
+        }
     }
 }

@@ -1,0 +1,37 @@
+img {
+    @extend .rounded;
+}
+
+picture {
+    position: relative;
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--bs-border-radius);
+
+    &.with-overlay {
+        background: rgba(tint-color($primary, 40%), .2);
+
+        img {
+            mix-blend-mode: luminosity;
+        }
+    }
+
+    &.no-outline {
+        margin-right: 1.5rem;
+        margin-bottom: .5rem;
+    }
+
+    &:not(.no-outline) {
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            border: 1px dashed $gray-900;
+            border-radius: var(--bs-border-radius);
+            top: .75rem;
+            left: .75rem;
+            z-index: -1;
+        }
+    }
+}

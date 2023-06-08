@@ -10,7 +10,7 @@ body {
         background-blend-mode: luminosity;
         opacity: .8;
 
-        height: 100dvh;
+        height: 100%;
         width: 100vw;
         right: 0;
         top: 0;
@@ -63,7 +63,7 @@ body {
     position: relative;
     background-color: tint-color($primary, 0%);
     // @include gradient-x(#4CDBB6, #F9F871);
-    
+
     // &::before {
     //     position: absolute;
     //     display: block;
@@ -143,9 +143,12 @@ body {
 }
 
 .contact-options {
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 
     a {
+        background-color: tint-color($dark, 5%);
         position: relative;
         display: flex;
         gap: 1rem;
@@ -155,9 +158,9 @@ body {
         color: $primary;
         border-radius: $border-radius;
         border: 1px dashed $white;
-        padding: 2rem 1.5rem;
-        font-size: 1.4rem;
+        padding: 1rem .75rem;
         font-weight: 200;
+        min-width: 250px;
 
         @include transition(.13s);
 
@@ -185,9 +188,4 @@ body {
         text-decoration: none;
         border-bottom: 1px dashed shade-color($primary, 45%);
     }
-}
-
-.bg-medium {
-    background-color: tint-color($dark, 10%);
-    color: color-contrast($dark);
 }

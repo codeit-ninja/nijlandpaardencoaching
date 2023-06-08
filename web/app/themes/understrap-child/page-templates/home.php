@@ -44,55 +44,36 @@ $featured_image = get_the_post_thumbnail();
 		</div><!-- .row -->
 
 	</div><!-- #content -->
+    
+    <?php
+    /**
+     * Render home page blocks logic
+     */
+    get_template_part('global-templates/home/block', 'featured');
+    get_template_part('global-templates/home/block', 'footer');
+    ?>
 
-    <div class="container-image-full mt-5">
-        <div class="container text-white">
-            <div class="row g-5 align-items-center">
-                <div class="col-7 shape-seperator">
-                    <header class="shape-seperator-header">
-                        <h2>Paardencoachen maakt je bewust van</h2>
-                    </header>
-                    <section class="shape-seperator-content">
-                        <ul class="npc-list">
-                            <li>Bewustwording van je innerlijke houding</li>
-                            <li>Inzicht krijgen in communicatieve vaardigheden</li>
-                            <li>Leiderschapsstijlen en wijze van aansturing</li>
-                            <li>Het stellen van grenzen en doelen</li>
-                            <li>Keuzes maken</li>
-                            <li>Ben ik van nature een leider of juist een volger?</li>
-                            <li>Ben ik een teamplayer of een solist?</li>
-                            <li>Zit ik binnen mijn team op de juiste plaats?</li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="col-5 py-5">
-                    <img src="https://nijlandpaardencoaching.wordpress.test/app/uploads/2023/06/image.png" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-full bg-medium">
+    <!-- <div class="container-full bg-medium">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="py-5">
                         <?php the_field('coaching_points'); ?>
 
-                        <div class="d-flex contact-options mt-5 mb-3">
-                            <a href="" class="col">
-                                <i class="fa-duotone fa-phone-rotary"></i>
+                        <div class="contact-options mt-5 mb-3">
+                            <a href="">
+                                <i class="fa-duotone fa-phone"></i>
                                 <span>Bel ons</span>
                             </a>
-                            <a href="" class="col">
-                                <i class="fa-duotone fa-envelope"></i>
+                            <a href="">
+                                <i class="fa-regular fa-at"></i>
                                 <span>Mail ons</span>
                             </a>
-                            <a href="" class="col">
+                            <a href="">
                                 <i class="fa-brands fa-whatsapp"></i>
                                 <span>Simone Mijering</span>
                             </a>
-                            <a href="" class="col">
+                            <a href="">
                                 <i class="fa-brands fa-whatsapp"></i>
                                 <span>Diana van Eldik</span>
                             </a>
@@ -101,7 +82,7 @@ $featured_image = get_the_post_thumbnail();
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 </div><!-- #page-wrapper -->
 

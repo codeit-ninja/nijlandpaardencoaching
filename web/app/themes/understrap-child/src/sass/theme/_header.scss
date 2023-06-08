@@ -1,0 +1,29 @@
+.header {
+    &-image {
+        position: relative;
+        background-position: center;
+        background-color: tint-color($primary, 85%);
+        background-blend-mode: luminosity;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 500px;
+
+        &::after {
+            background-color: rgba(97, 97, 97, 0.3);
+            position: absolute;
+            content: " ";
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        h5 {
+            max-width: 650px;
+        }
+
+        * {
+            z-index: 1;
+        }
+    }
+}

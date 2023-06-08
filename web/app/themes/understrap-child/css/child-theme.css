@@ -1,5 +1,60 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-ExtraLight.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-ExtraLightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-Light.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-LightItalic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-Regular.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-Italic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-Bold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-BoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-ExtraBold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url(/app/themes/understrap-child/fonts/fira/FiraSans-ExtraBoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -50,11 +105,11 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 29, 35, 39;
   --bs-body-bg-rgb: 243, 243, 243;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Fira Sans", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1.1rem;
+  --bs-body-font-size: 1.2rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #1d2327;
@@ -116,52 +171,52 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.4rem + 1.8vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.345rem + 1.14vw);
+  font-size: calc(1.365rem + 1.38vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.3175rem + 0.81vw);
+  font-size: calc(1.335rem + 1.02vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.925rem;
+    font-size: 2.1rem;
   }
 }
 
 h4, .h4 {
-  font-size: calc(1.29rem + 0.48vw);
+  font-size: calc(1.305rem + 0.66vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.65rem;
+    font-size: 1.8rem;
   }
 }
 
 h5, .h5 {
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   h5, .h5 {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
 h6, .h6 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -486,12 +541,12 @@ progress {
 }
 
 .lead {
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   font-weight: 300;
 }
 @media (min-width: 1200px) {
   .lead {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -585,11 +640,11 @@ progress {
 
 .blockquote, .wp-block-quote {
   margin-bottom: 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   .blockquote, .wp-block-quote {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 .blockquote > :last-child, .wp-block-quote > :last-child {
@@ -1975,31 +2030,35 @@ progress {
 }
 .form-label {
   margin-bottom: 0.5rem;
+  font-weight: 300;
+  color: #616568;
 }
 
 .col-form-label {
-  padding-top: calc(0.375rem + 1px);
-  padding-bottom: calc(0.375rem + 1px);
+  padding-top: calc(0.75rem + 1px);
+  padding-bottom: calc(0.75rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
+  font-weight: 300;
   line-height: 1.5;
+  color: #616568;
 }
 
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   .col-form-label-lg {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
 }
 
 .form-text {
@@ -2028,16 +2087,16 @@ progress {
 .wpcf7 textarea {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
   color: #1d2327;
   background-color: #f3f3f3;
   background-clip: padding-box;
-  border: 1px solid #8e9193;
+  border: 1px solid #34393d;
   appearance: none;
-  border-radius: 0.375rem;
+  border-radius: 0;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2179,9 +2238,9 @@ progress {
 .wpcf7 input[type=submit]::file-selector-button,
 .wpcf7 select::file-selector-button,
 .wpcf7 textarea::file-selector-button {
-  padding: 0.375rem 0.75rem;
-  margin: -0.375rem -0.75rem;
-  margin-inline-end: 0.75rem;
+  padding: 0.75rem 1rem;
+  margin: -0.75rem -1rem;
+  margin-inline-end: 1rem;
   color: #1d2327;
   background-color: #bbbdbe;
   pointer-events: none;
@@ -2238,7 +2297,7 @@ progress {
 .form-control-plaintext {
   display: block;
   width: 100%;
-  padding: 0.375rem 0;
+  padding: 0.75rem 0;
   margin-bottom: 0;
   line-height: 1.5;
   color: #1d2327;
@@ -2257,7 +2316,7 @@ progress {
 .form-control-sm {
   min-height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   border-radius: 0.25rem;
 }
 .form-control-sm::file-selector-button {
@@ -2269,12 +2328,12 @@ progress {
 .form-control-lg {
   min-height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
   .form-control-lg {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 .form-control-lg::file-selector-button {
@@ -2285,7 +2344,7 @@ progress {
 
 textarea.form-control, .wpcf7 textarea.wpcf7-validation-errors,
 .wpcf7 textarea {
-  min-height: calc(1.5em + 0.75rem + 2px);
+  min-height: calc(1.5em + 1.5rem + 2px);
 }
 textarea.form-control-sm {
   min-height: calc(1.5em + 0.5rem + 2px);
@@ -2296,18 +2355,18 @@ textarea.form-control-lg {
 
 .form-control-color {
   width: 3rem;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem;
+  height: calc(1.5em + 1.5rem + 2px);
+  padding: 0.75rem;
 }
 .form-control-color:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
 .form-control-color::-moz-color-swatch {
   border: 0 !important;
-  border-radius: 0.375rem;
+  border-radius: 0;
 }
 .form-control-color::-webkit-color-swatch {
-  border-radius: 0.375rem;
+  border-radius: 0;
 }
 .form-control-color.form-control-sm {
   height: calc(1.5em + 0.5rem + 2px);
@@ -2319,19 +2378,19 @@ textarea.form-control-lg {
 .form-select {
   display: block;
   width: 100%;
-  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-  -moz-padding-start: calc(0.75rem - 3px);
-  font-size: 1.1rem;
+  padding: 0.75rem 3rem 0.75rem 1rem;
+  -moz-padding-start: calc(1rem - 3px);
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
   color: #1d2327;
   background-color: #f3f3f3;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2334393d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
+  background-position: right 1rem center;
   background-size: 16px 12px;
-  border: 1px solid #8e9193;
-  border-radius: 0.375rem;
+  border: 1px solid #34393d;
+  border-radius: 0;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
@@ -2347,7 +2406,7 @@ textarea.form-control-lg {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 0 0.25rem rgba(43, 206, 195, 0.25);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
-  padding-right: 0.75rem;
+  padding-right: 1rem;
   background-image: none;
 }
 .form-select:disabled {
@@ -2362,7 +2421,7 @@ textarea.form-control-lg {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   border-radius: 0.25rem;
 }
 
@@ -2370,18 +2429,18 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
   .form-select-lg {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
 .form-check {
   display: block;
-  min-height: 1.65rem;
+  min-height: 1.8rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -2619,7 +2678,7 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 1rem 0.75rem;
+  padding: 1rem 1rem;
   overflow: hidden;
   text-align: start;
   text-overflow: ellipsis;
@@ -2653,7 +2712,7 @@ textarea.form-control-lg {
 .wpcf7 .form-floating > select,
 .wpcf7 .form-floating > textarea,
 .form-floating > .form-control-plaintext {
-  padding: 1rem 0.75rem;
+  padding: 1rem 1rem;
 }
 .form-floating > .form-control::placeholder, .wpcf7 .form-floating > .wpcf7-validation-errors::placeholder, .wpcf7 .form-floating > input[type=text]::placeholder,
 .wpcf7 .form-floating > input[type=search]::placeholder,
@@ -2875,16 +2934,16 @@ textarea.form-control-lg {
 .input-group-text {
   display: flex;
   align-items: center;
-  padding: 0.375rem 0.75rem;
-  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
   color: #1d2327;
   text-align: center;
   white-space: nowrap;
   background-color: #bbbdbe;
-  border: 1px solid #8e9193;
-  border-radius: 0.375rem;
+  border: 1px solid #34393d;
+  border-radius: 0;
 }
 
 .input-group-lg > .form-control, .wpcf7 .input-group-lg > .wpcf7-validation-errors, .wpcf7 .input-group-lg > input[type=text],
@@ -2911,7 +2970,7 @@ textarea.form-control-lg {
 .woocommerce-info .input-group-lg > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .input-group-lg > a.button {
   padding: 0.5rem 1rem;
-  font-size: calc(1.2625rem + 0.15vw);
+  font-size: calc(1.275rem + 0.3vw);
   border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
@@ -2938,7 +2997,7 @@ textarea.form-control-lg {
   .input-group-lg > .btn,
   .woocommerce-info .input-group-lg > a.button,
   .woocommerce-notices-wrapper .woocommerce-message .input-group-lg > a.button {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -2966,13 +3025,13 @@ textarea.form-control-lg {
 .woocommerce-info .input-group-sm > a.button,
 .woocommerce-notices-wrapper .woocommerce-message .input-group-sm > a.button {
   padding: 0.25rem 0.5rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   border-radius: 0.25rem;
 }
 
 .input-group-lg > .form-select,
 .input-group-sm > .form-select {
-  padding-right: 3rem;
+  padding-right: 4rem;
 }
 
 .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
@@ -3071,7 +3130,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   color: #fff;
   background-color: rgba(25, 135, 84, 0.9);
   border-radius: 0.375rem;
@@ -3137,11 +3196,11 @@ textarea.form-control-lg {
 .wpcf7 select.is-valid,
 .wpcf7 textarea.is-valid {
   border-color: #198754;
-  padding-right: calc(1.5em + 0.75rem);
+  padding-right: calc(1.5em + 1.5rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  background-position: right calc(0.375em + 0.375rem) center;
+  background-size: calc(0.75em + 0.75rem) calc(0.75em + 0.75rem);
 }
 .was-validated .form-control:valid:focus, .was-validated .wpcf7 .wpcf7-validation-errors:valid:focus, .wpcf7 .was-validated .wpcf7-validation-errors:valid:focus, .was-validated .wpcf7 input[type=text]:valid:focus, .wpcf7 .was-validated input[type=text]:valid:focus,
 .was-validated .wpcf7 input[type=search]:valid:focus,
@@ -3203,18 +3262,18 @@ textarea.form-control-lg {
 .was-validated .wpcf7 textarea:valid,
 .wpcf7 .was-validated textarea:valid, textarea.form-control.is-valid,
 .wpcf7 textarea.is-valid {
-  padding-right: calc(1.5em + 0.75rem);
-  background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
+  padding-right: calc(1.5em + 1.5rem);
+  background-position: top calc(0.375em + 0.375rem) right calc(0.375em + 0.375rem);
 }
 
 .was-validated .form-select:valid, .form-select.is-valid {
   border-color: #198754;
 }
 .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"] {
-  padding-right: 4.125rem;
+  padding-right: 5.5rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2334393d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-  background-position: right 0.75rem center, center right 2.25rem;
-  background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  background-position: right 1rem center, center right 3rem;
+  background-size: 16px 12px, calc(0.75em + 0.75rem) calc(0.75em + 0.75rem);
 }
 .was-validated .form-select:valid:focus, .form-select.is-valid:focus {
   border-color: #198754;
@@ -3222,7 +3281,7 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-control-color:valid, .form-control-color.is-valid {
-  width: calc(3rem + calc(1.5em + 0.75rem));
+  width: calc(3rem + calc(1.5em + 1.5rem));
 }
 
 .was-validated .form-check-input:valid, .form-check-input.is-valid {
@@ -3317,7 +3376,7 @@ textarea.form-control-lg {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.375rem;
@@ -3383,11 +3442,11 @@ textarea.form-control-lg {
 .wpcf7 select.is-invalid,
 .wpcf7 textarea.is-invalid {
   border-color: #dc3545;
-  padding-right: calc(1.5em + 0.75rem);
+  padding-right: calc(1.5em + 1.5rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  background-position: right calc(0.375em + 0.375rem) center;
+  background-size: calc(0.75em + 0.75rem) calc(0.75em + 0.75rem);
 }
 .was-validated .form-control:invalid:focus, .was-validated .wpcf7 .wpcf7-validation-errors:invalid:focus, .wpcf7 .was-validated .wpcf7-validation-errors:invalid:focus, .was-validated .wpcf7 input[type=text]:invalid:focus, .wpcf7 .was-validated input[type=text]:invalid:focus,
 .was-validated .wpcf7 input[type=search]:invalid:focus,
@@ -3449,18 +3508,18 @@ textarea.form-control-lg {
 .was-validated .wpcf7 textarea:invalid,
 .wpcf7 .was-validated textarea:invalid, textarea.form-control.is-invalid,
 .wpcf7 textarea.is-invalid {
-  padding-right: calc(1.5em + 0.75rem);
-  background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
+  padding-right: calc(1.5em + 1.5rem);
+  background-position: top calc(0.375em + 0.375rem) right calc(0.375em + 0.375rem);
 }
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
   border-color: #dc3545;
 }
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
-  padding-right: 4.125rem;
+  padding-right: 5.5rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2334393d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
-  background-position: right 0.75rem center, center right 2.25rem;
-  background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  background-position: right 1rem center, center right 3rem;
+  background-size: 16px 12px, calc(0.75em + 0.75rem) calc(0.75em + 0.75rem);
 }
 .was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
   border-color: #dc3545;
@@ -3468,7 +3527,7 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-control-color:invalid, .form-control-color.is-invalid {
-  width: calc(3rem + calc(1.5em + 0.75rem));
+  width: calc(3rem + calc(1.5em + 1.5rem));
 }
 
 .was-validated .form-check-input:invalid, .form-check-input.is-invalid {
@@ -3548,19 +3607,19 @@ textarea.form-control-lg {
 }
 
 .btn, .wpcf7 input[type=submit], .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button {
-  --bs-btn-padding-x: 0.75rem;
-  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-padding-y: 0.75rem;
   --bs-btn-font-family: ;
-  --bs-btn-font-size: 1.1rem;
+  --bs-btn-font-size: 1.2rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: #1d2327;
   --bs-btn-bg: transparent;
-  --bs-btn-border-width: 1px;
+  --bs-btn-border-width: 0;
   --bs-btn-border-color: transparent;
   --bs-btn-border-radius: 0.375rem;
   --bs-btn-hover-border-color: transparent;
-  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-box-shadow: none;
   --bs-btn-disabled-opacity: 0.65;
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
   display: inline-block;
@@ -3745,7 +3804,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #e4e4e4;
 }
 
-.btn-dark {
+.btn-dark, .wpcf7 input[type=submit] {
   --bs-btn-color: #fff;
   --bs-btn-bg: #1d2327;
   --bs-btn-border-color: #1d2327;
@@ -3762,7 +3821,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #1d2327;
 }
 
-.btn-outline-primary, .wpcf7 input[type=submit] {
+.btn-outline-primary {
   --bs-btn-color: #2bcec3;
   --bs-btn-border-color: #2bcec3;
   --bs-btn-hover-color: #000;
@@ -3923,19 +3982,19 @@ textarea.form-control-lg {
 .btn-lg, .btn-group-lg > .btn, .wpcf7 .btn-group-lg > input[type=submit], .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
-  --bs-btn-font-size: calc(1.2625rem + 0.15vw);
+  --bs-btn-font-size: calc(1.275rem + 0.3vw);
   --bs-btn-border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
   .btn-lg, .btn-group-lg > .btn, .wpcf7 .btn-group-lg > input[type=submit], .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
-    --bs-btn-font-size: 1.375rem;
+    --bs-btn-font-size: 1.5rem;
   }
 }
 
 .btn-sm, .btn-group-sm > .btn, .wpcf7 .btn-group-sm > input[type=submit], .woocommerce-info .btn-group-sm > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
-  --bs-btn-font-size: 0.9625rem;
+  --bs-btn-font-size: 1.05rem;
   --bs-btn-border-radius: 0.25rem;
 }
 
@@ -3987,16 +4046,16 @@ textarea.form-control-lg {
 
 .dropdown-toggle {
   white-space: nowrap;
+  display: flex !important;
+  align-items: center;
 }
 .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0;
-  border-left: 0.3em solid transparent;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 0.75rem;
+  font: var(--fa-font-regular);
+  content: "\f078";
 }
 .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -4008,16 +4067,16 @@ textarea.form-control-lg {
   --bs-dropdown-padding-x: 0;
   --bs-dropdown-padding-y: 0.5rem;
   --bs-dropdown-spacer: 0.125rem;
-  --bs-dropdown-font-size: 1.1rem;
+  --bs-dropdown-font-size: 1.2rem;
   --bs-dropdown-color: #1d2327;
   --bs-dropdown-bg: #fff;
   --bs-dropdown-border-color: transparent;
-  --bs-dropdown-border-radius: 5px;
+  --bs-dropdown-border-radius: 0;
   --bs-dropdown-border-width: 1px;
-  --bs-dropdown-inner-border-radius: 4px;
+  --bs-dropdown-inner-border-radius: -1px;
   --bs-dropdown-divider-bg: transparent;
   --bs-dropdown-divider-margin-y: 0.5rem;
-  --bs-dropdown-box-shadow: 2px 2px 8px -2px #a5a7a9;
+  --bs-dropdown-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   --bs-dropdown-link-color: var(--bs-navbar-color);
   --bs-dropdown-link-hover-color: #1d2327;
   --bs-dropdown-link-hover-bg: transparent;
@@ -4153,15 +4212,17 @@ textarea.form-control-lg {
   margin-top: 0;
   margin-bottom: var(--bs-dropdown-spacer);
 }
+.dropup .dropdown-toggle {
+  display: flex !important;
+  align-items: center;
+}
 .dropup .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0.3em solid;
-  border-left: 0.3em solid transparent;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 0.75rem;
+  font: var(--fa-font-regular);
+  content: "\f077";
 }
 .dropup .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -4174,15 +4235,17 @@ textarea.form-control-lg {
   margin-top: 0;
   margin-left: var(--bs-dropdown-spacer);
 }
+.dropend .dropdown-toggle {
+  display: flex !important;
+  align-items: center;
+}
 .dropend .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid transparent;
-  border-right: 0;
-  border-bottom: 0.3em solid transparent;
-  border-left: 0.3em solid;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 0.75rem;
+  font: var(--fa-font-regular);
+  content: "\f054";
 }
 .dropend .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -4198,23 +4261,26 @@ textarea.form-control-lg {
   margin-top: 0;
   margin-right: var(--bs-dropdown-spacer);
 }
+.dropstart .dropdown-toggle {
+  display: flex !important;
+  align-items: center;
+}
 .dropstart .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 0.75rem;
+  font: var(--fa-font-regular);
 }
 .dropstart .dropdown-toggle::after {
   display: none;
 }
 .dropstart .dropdown-toggle::before {
   display: inline-block;
-  margin-right: 0.255em;
+  margin-right: 0.75rem;
   vertical-align: 0.255em;
   content: "";
-  border-top: 0.3em solid transparent;
-  border-right: 0.3em solid;
-  border-bottom: 0.3em solid transparent;
+  content: "\f053";
 }
 .dropstart .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -4267,7 +4333,7 @@ textarea.form-control-lg {
   display: block;
   padding: var(--bs-dropdown-header-padding-y) var(--bs-dropdown-header-padding-x);
   margin-bottom: 0;
-  font-size: 0.9625rem;
+  font-size: 1.05rem;
   color: var(--bs-dropdown-header-color);
   white-space: nowrap;
 }
@@ -4369,7 +4435,7 @@ textarea.form-control-lg {
 }
 .btn-group > :not(.btn-check:first-child) + .btn, .wpcf7 .btn-group > :not(.btn-check:first-child) + input[type=submit], .woocommerce-info .btn-group > :not(.btn-check:first-child) + a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group > :not(.btn-check:first-child) + a.button,
 .btn-group > .btn-group:not(:first-child) {
-  margin-left: -1px;
+  margin-left: 0;
 }
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .wpcf7 .btn-group > input[type=submit]:not(:last-child):not(.dropdown-toggle), .woocommerce-info .btn-group > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
@@ -4397,8 +4463,8 @@ textarea.form-control-lg {
 }
 
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropend .dropdown-toggle-split::after {
   margin-left: 0;
@@ -4435,7 +4501,7 @@ textarea.form-control-lg {
 }
 .btn-group-vertical > .btn:not(:first-child), .wpcf7 .btn-group-vertical > input[type=submit]:not(:first-child), .woocommerce-info .btn-group-vertical > a.button:not(:first-child), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
-  margin-top: -1px;
+  margin-top: 0;
 }
 .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .wpcf7 .btn-group-vertical > input[type=submit]:not(:last-child):not(.dropdown-toggle), .woocommerce-info .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle), .woocommerce-notices-wrapper .woocommerce-message .btn-group-vertical > a.button:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
@@ -4586,15 +4652,15 @@ textarea.form-control-lg {
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-padding-y: 0.29375rem;
+  --bs-navbar-brand-padding-y: 0.275rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.375rem;
+  --bs-navbar-brand-font-size: 1.5rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
-  --bs-navbar-toggler-font-size: 1.375rem;
+  --bs-navbar-toggler-font-size: 1.5rem;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
   --bs-navbar-toggler-border-radius: 0.375rem;
@@ -5213,7 +5279,7 @@ textarea.form-control-lg {
   align-items: center;
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;
   background-color: var(--bs-accordion-btn-bg);
@@ -5352,7 +5418,7 @@ textarea.form-control-lg {
 .pagination {
   --bs-pagination-padding-x: 0.75rem;
   --bs-pagination-padding-y: 0.375rem;
-  --bs-pagination-font-size: 1.1rem;
+  --bs-pagination-font-size: 1.2rem;
   --bs-pagination-color: var(--bs-link-color);
   --bs-pagination-bg: #fff;
   --bs-pagination-border-width: 1px;
@@ -5432,19 +5498,19 @@ textarea.form-control-lg {
 .pagination-lg {
   --bs-pagination-padding-x: 1.5rem;
   --bs-pagination-padding-y: 0.75rem;
-  --bs-pagination-font-size: calc(1.2625rem + 0.15vw);
+  --bs-pagination-font-size: calc(1.275rem + 0.3vw);
   --bs-pagination-border-radius: 0.5rem;
 }
 @media (min-width: 1200px) {
   .pagination-lg {
-    --bs-pagination-font-size: 1.375rem;
+    --bs-pagination-font-size: 1.5rem;
   }
 }
 
 .pagination-sm {
   --bs-pagination-padding-x: 0.5rem;
   --bs-pagination-padding-y: 0.25rem;
-  --bs-pagination-font-size: 0.9625rem;
+  --bs-pagination-font-size: 1.05rem;
   --bs-pagination-border-radius: 0.25rem;
 }
 
@@ -5591,7 +5657,7 @@ textarea.form-control-lg {
 }
 .progress {
   --bs-progress-height: 1rem;
-  --bs-progress-font-size: 0.825rem;
+  --bs-progress-font-size: 0.9rem;
   --bs-progress-bg: #bbbdbe;
   --bs-progress-border-radius: 0.375rem;
   --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
@@ -6386,7 +6452,7 @@ textarea.form-control-lg {
   --bs-tooltip-padding-x: 0.5rem;
   --bs-tooltip-padding-y: 0.25rem;
   --bs-tooltip-margin: ;
-  --bs-tooltip-font-size: 0.9625rem;
+  --bs-tooltip-font-size: 1.05rem;
   --bs-tooltip-color: #fff;
   --bs-tooltip-bg: #000;
   --bs-tooltip-border-radius: 0.375rem;
@@ -6486,7 +6552,7 @@ textarea.form-control-lg {
 .popover {
   --bs-popover-zindex: 1070;
   --bs-popover-max-width: 276px;
-  --bs-popover-font-size: 0.9625rem;
+  --bs-popover-font-size: 1.05rem;
   --bs-popover-bg: #fff;
   --bs-popover-border-width: 1px;
   --bs-popover-border-color: var(--bs-border-color-translucent);
@@ -6495,7 +6561,7 @@ textarea.form-control-lg {
   --bs-popover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --bs-popover-header-padding-x: 1rem;
   --bs-popover-header-padding-y: 0.5rem;
-  --bs-popover-header-font-size: 1.1rem;
+  --bs-popover-header-font-size: 1.2rem;
   --bs-popover-header-color: ;
   --bs-popover-header-bg: #f0f0f0;
   --bs-popover-body-padding-x: 1rem;
@@ -8770,27 +8836,27 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.4rem + 1.8vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.345rem + 1.14vw) !important;
+  font-size: calc(1.365rem + 1.38vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3175rem + 0.81vw) !important;
+  font-size: calc(1.335rem + 1.02vw) !important;
 }
 
 .fs-4 {
-  font-size: calc(1.29rem + 0.48vw) !important;
+  font-size: calc(1.305rem + 0.66vw) !important;
 }
 
 .fs-5 {
-  font-size: calc(1.2625rem + 0.15vw) !important;
+  font-size: calc(1.275rem + 0.3vw) !important;
 }
 
 .fs-6 {
-  font-size: 1.1rem !important;
+  font-size: 1.2rem !important;
 }
 
 .fst-italic {
@@ -11633,19 +11699,19 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.75rem !important;
+    font-size: 3rem !important;
   }
   .fs-2 {
-    font-size: 2.2rem !important;
+    font-size: 2.4rem !important;
   }
   .fs-3 {
-    font-size: 1.925rem !important;
+    font-size: 2.1rem !important;
   }
   .fs-4 {
-    font-size: 1.65rem !important;
+    font-size: 1.8rem !important;
   }
   .fs-5 {
-    font-size: 1.375rem !important;
+    font-size: 1.5rem !important;
   }
 }
 @media print {
@@ -11735,19 +11801,19 @@ body {
 .widget_archive select {
   display: block;
   width: 100%;
-  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-  -moz-padding-start: calc(0.75rem - 3px);
-  font-size: 1.1rem;
+  padding: 0.75rem 3rem 0.75rem 1rem;
+  -moz-padding-start: calc(1rem - 3px);
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
   color: #1d2327;
   background-color: #f3f3f3;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2334393d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
+  background-position: right 1rem center;
   background-size: 16px 12px;
-  border: 1px solid #8e9193;
-  border-radius: 0.375rem;
+  border: 1px solid #34393d;
+  border-radius: 0;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
@@ -11884,9 +11950,9 @@ a.skip-link:not(:focus):not(:focus-within) {
   padding: 0;
 }
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input {
-  border-radius: 0.375rem;
-  border: 1px solid #8e9193;
-  padding: 0.375rem 0.75rem;
+  border-radius: 0;
+  border: 1px solid #34393d;
+  padding: 0.75rem 1rem;
 }
 .wp-block-search.wp-block-search__button-inside .wp-block-search__button {
   margin-left: 0;
@@ -12013,6 +12079,11 @@ h4, .h4 {
   font-family: "Playfair Display", serif;
 }
 
+h6, .h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 a:not(.nav-link, .dropdown-item) {
   text-decoration: none;
   border-bottom: 1px dashed inherit;
@@ -12092,6 +12163,28 @@ picture:not(.no-outline)::after {
 .btn-secondary {
   background-color: #232020;
 }
+.btn-whatsapp {
+  display: flex;
+  background-color: #2BB741;
+  text-align: left;
+  align-items: center;
+  width: auto;
+  gap: 0.75rem;
+  padding: 0.75rem 1.3rem;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  transition: 0.12s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-whatsapp {
+    transition: none;
+  }
+}
+.btn-whatsapp:hover, .btn-whatsapp:active, .btn-whatsapp:hover:active {
+  background-color: #29ae3e;
+  color: #fff;
+}
 
 .npc-list,
 .npc-list li {
@@ -12103,27 +12196,28 @@ picture:not(.no-outline)::after {
 .npc-list {
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
   gap: 1rem;
 }
 .npc-list li {
-  margin-left: 2rem;
+  position: relative;
+  margin-left: 4rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
-.npc-list li::before {
-  position: relative;
+.npc-list li::before,
+.npc-list li::after {
   display: inline-block;
-  top: 0.1rem;
-  left: -0.5rem;
-  content: "";
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23197A73" class="bi bi-check-circle-fill" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/> </svg>');
-  background-repeat: no-repeat;
-  background-size: 1.5rem 1.5rem;
-  height: 1.5rem;
-  width: 1.5rem;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-regular);
+  position: absolute;
+  left: -2.5rem;
+}
+.npc-list li::after {
+  content: "\e404";
 }
 
 ul:not(.navbar-nav, .dropdown, .dropdown-menu, .menu, .npc-list, .nav) {
@@ -12160,6 +12254,31 @@ ul:not(.navbar-nav, .dropdown, .dropdown-menu, .menu, .npc-list, .nav) li::after
 #breadcrumbs span span {
   font-weight: 500;
   color: var(--bs-gray-500);
+}
+
+.header-image {
+  position: relative;
+  background-position: center;
+  background-color: #dff8f6;
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+.header-image::after {
+  background-color: rgba(97, 97, 97, 0.3);
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.header-image h5, .header-image .h5 {
+  max-width: 650px;
+}
+.header-image * {
+  z-index: 1;
 }
 
 body {
@@ -12210,22 +12329,12 @@ body::before {
   position: relative;
   background-color: #2bcec3;
 }
-.container-image-full::before {
-  position: absolute;
-  display: block;
-  content: " ";
-  background-color: transparent;
-  background-image: url(/app/themes/understrap-child/src/assets/grass-pattern.png);
-  background-size: 800px;
-  width: 100%;
-  height: 50px;
-  top: -40px;
-  left: 0;
-}
 .container-image-full .container {
   overflow: hidden;
 }
 .container-image-full #container-image {
+  background-color: rgba(213, 245, 243, 0.7);
+  background-blend-mode: luminosity;
   position: relative;
   background-position: center;
   background-size: cover;
@@ -12236,6 +12345,7 @@ body::before {
 .container-shape {
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 .container-shape::before, .container-shape::after {
   background-color: #f3f3f3;
@@ -12253,27 +12363,9 @@ body::before {
   right: -60px;
 }
 
-.shape-seperator {
-  position: relative;
-  z-index: 5;
-  color: #fff;
-  padding: 2rem;
-}
-.shape-seperator::after {
-  background-color: #2bcec3;
-  position: absolute;
-  content: " ";
-  height: 100%;
-  width: calc(100% + 80px);
-  left: -40px;
-  top: 0;
-  transform: skew(-8deg);
-  z-index: -1;
-  border-right: 10px solid #7be4dd;
-}
 .shape-seperator-header {
   margin-bottom: 2rem;
-  font-style: italic;
+  color: #d5f5f3;
 }
 
 #thumbnail {
@@ -12294,20 +12386,27 @@ body::before {
 }
 
 .contact-options {
-  gap: 1rem;
+  gap: 2rem;
 }
 .contact-options a {
-  background-color: #2bcec3;
+  position: relative;
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #197a73;
-  padding: 3rem 1.5rem;
+  color: #2bcec3;
   border-radius: 0.375rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+  border: 1px dashed #fff;
+  padding: 2rem 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+  transition: 0.13s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .contact-options a {
+    transition: none;
+  }
 }
 .contact-options a:hover {
   color: #fff;
@@ -12317,6 +12416,11 @@ body::before {
   color: #18716b;
   text-decoration: none;
   border-bottom: 1px dashed #18716b;
+}
+
+.bg-medium {
+  background-color: #34393d;
+  color: #fff;
 }
 
 #sidebar-nav {
@@ -12348,7 +12452,7 @@ body::before {
 }
 
 #main-menu .dropdown-menu {
-  top: calc(100% + 25px);
+  top: calc(100% + 24px);
 }
 
 #main-nav {
@@ -12358,7 +12462,7 @@ body::before {
   left: 0;
   width: 100%;
   z-index: 10;
-  box-shadow: 0 0 0.75rem -0.3rem #4a4f52;
+  border-bottom: 5px solid #bbbdbe;
   --bs-navbar-padding-y: .75rem;
   --bs-navbar-padding-x: .75rem;
   --bs-navbar-nav-link-padding-x: 1.35rem;
@@ -12373,21 +12477,7 @@ body::before {
   font-weight: 500;
 }
 .nav-item.active .nav-link, .active.page_item .nav-link {
-  position: relative;
-  display: flex;
-  align-items: center;
   color: #2bcec3;
-}
-.nav-item.active .nav-link::before, .active.page_item .nav-link::before {
-  position: absolute;
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font: var(--fa-font-solid);
-  content: "\f076";
-  margin-top: 3px;
-  transform: rotate(45deg);
-  left: -0.3rem;
 }
 .nav-link {
   color: #34393d;
@@ -12432,7 +12522,7 @@ body::before {
 
 #wrapper-footer-full h6, #wrapper-footer-full .h6 {
   color: #8e9193;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -12846,13 +12936,13 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 
 .wp-block-buttons .wp-block-button .wp-block-button__link {
-  --bs-btn-padding-y: 0.375rem;
-  --bs-btn-padding-x: 0.75rem;
-  --bs-btn-font-size: 1.1rem;
+  --bs-btn-padding-y: 0.75rem;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-font-size: 1.2rem;
   --bs-btn-border-radius: 0.375rem;
 }
 .wp-block-buttons .wp-block-button:not(.is-style-outline) .wp-block-button__link {
-  border: 1px solid transparent;
+  border: 0 solid transparent;
 }
 
 /*
@@ -12869,8 +12959,11 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 * .wpcf7-submit
 */
 .wpcf7 {
-  max-width: 600px;
   margin: 0 auto !important;
+}
+.wpcf7 input[type=submit] {
+  width: auto;
+  float: right;
 }
 .wpcf7 .wpcf7-form p {
   margin-bottom: 1rem;

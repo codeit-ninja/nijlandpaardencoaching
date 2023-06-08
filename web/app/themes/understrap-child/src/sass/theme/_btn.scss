@@ -2,4 +2,26 @@
     &-secondary {
         background-color: #232020;
     }
+
+    &-whatsapp {
+        display: flex;
+        background-color: #2BB741;
+        text-align: left;
+        align-items: center;
+        width: auto;
+        gap: .75rem;
+        padding: .75rem 1.3rem;
+        border: none;
+        box-shadow: none;
+        color: $white;
+
+        @include transition(.12s);
+
+        &:hover, 
+        &:active, 
+        &:hover:active {
+            background-color: shade-color(#2BB741, 5%);
+            color: $white;
+        }
+    }
 }

@@ -1,0 +1,45 @@
+// Toggles
+//
+// Used in conjunction with global variables to enable certain theme features.
+
+// Import custom mixins here, or override existing ones
+
+// Vendor
+@import "../assets/bootstrap5/vendor/rfs";
+
+// Deprecate
+@import "../assets/bootstrap5/mixins/deprecate";
+
+// Helpers
+@import "../assets/bootstrap5/mixins/breakpoints";
+@import "../assets/bootstrap5/mixins/color-scheme";
+@import "../assets/bootstrap5/mixins/image";
+@import "../assets/bootstrap5/mixins/resize";
+@import "../assets/bootstrap5/mixins/visually-hidden";
+@import "../assets/bootstrap5/mixins/reset-text";
+@import "../assets/bootstrap5/mixins/text-truncate";
+
+// Utilities
+@import "../assets/bootstrap5/mixins/utilities";
+
+// Components
+@import "../assets/bootstrap5/mixins/alert";
+@import "../assets/bootstrap5/mixins/backdrop";
+@import "../assets/bootstrap5/mixins/buttons";
+@import "mixins/caret";
+@import "../assets/bootstrap5/mixins/pagination";
+@import "../assets/bootstrap5/mixins/lists";
+@import "../assets/bootstrap5/mixins/list-group";
+@import "../assets/bootstrap5/mixins/forms";
+@import "../assets/bootstrap5/mixins/table-variants";
+
+// Skins
+@import "../assets/bootstrap5/mixins/border-radius";
+@import "../assets/bootstrap5/mixins/box-shadow";
+@import "../assets/bootstrap5/mixins/gradients";
+@import "../assets/bootstrap5/mixins/transition";
+
+// Layout
+@import "../assets/bootstrap5/mixins/clearfix";
+@import "../assets/bootstrap5/mixins/container";
+@import "../assets/bootstrap5/mixins/grid";

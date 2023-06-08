@@ -1,17 +1,20 @@
 // Use this file to overwrite the basic Bootstrap variables and add your own variables
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
 
 
 $enable-shadows: true;
 
 $primary: #2bcec3;
 $accent: #2B88CE;
-$font-size-base: 1.1rem;
 $body-bg: #f3f3f3;
 
+
+$font-size-base: 1.2rem;
+$font-weight-base: 400;
 $font-family-serif: 'Playfair Display', serif;
+$font-family-sans-serif: 'Fira Sans', sans-serif;
 
 $gray-900: #1d2327;
 $gray-800: #34393d;
@@ -27,16 +30,9 @@ $dropdown-min-width:                20rem;
 $dropdown-padding-x:                0;
 $dropdown-padding-y:                .5rem;
 $dropdown-spacer:                   .125rem;
-// $dropdown-font-size:                $font-size-base;
-// $dropdown-color:                    $body-color;
-// $dropdown-bg:                       $white;
 $dropdown-border-color:             transparent;
-$dropdown-border-radius:            5px;
-// $dropdown-border-width:             $border-width;
-// $dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width);
-// $dropdown-divider-bg:               $dropdown-border-color;
-// $dropdown-divider-margin-y:         $spacer * .5;
-$dropdown-box-shadow:               2px 2px 8px -2px $gray-300;
+$dropdown-border-radius:            0;
+$dropdown-box-shadow:               0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
 $dropdown-link-color:               var(--bs-navbar-color);
 $dropdown-link-hover-color:         $gray-900;
@@ -45,18 +41,30 @@ $dropdown-link-hover-bg:            transparent;
 $dropdown-link-active-color:        $primary;
 $dropdown-link-active-bg:           transparent;
 
-// $dropdown-link-disabled-color:      $gray-500;
-
 $dropdown-item-padding-y:           1rem;
 $dropdown-item-padding-x:           1.5rem;
-
-// $dropdown-header-color:             $gray-600;
-// $dropdown-header-padding-x:         $dropdown-item-padding-x;
-// $dropdown-header-padding-y:         $dropdown-padding-y;
 
 $thumbnail-padding:                 0;
 $thumbnail-bg:                      $body-bg;
 $thumbnail-border-width:            0;
 $thumbnail-border-color:            none;
-// $thumbnail-border-radius:           $border-radius;
-// $thumbnail-box-shadow:              $box-shadow-sm;
+
+$caret-spacing:                     .75rem;
+
+$form-label-font-weight:            300;
+$form-label-color:                  $gray-600;
+
+$input-btn-padding-y:               .75rem;
+$input-btn-padding-x:               1rem;
+
+$input-padding-y:                   $input-btn-padding-y;
+$input-padding-x:                   $input-btn-padding-x;
+
+$input-bg:                          $body-bg;
+$input-border-color:                $gray-800;
+$input-border-width:                1px;
+
+$input-border-radius:               0;
+
+$btn-border-width:                  0;
+$btn-box-shadow:                    none;

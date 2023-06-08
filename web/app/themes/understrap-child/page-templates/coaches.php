@@ -64,11 +64,7 @@ $choaches = get_field('coaches');
 
     <?php if( get_field('content_block') ) : ?>
 
-        <div class="content-block bg-primary text-white p-5 mt-3">
-            <div class="<?php echo esc_attr( $container ); ?>">
-                <?php the_field('content_block'); ?>
-            </div>
-        </div>
+        <?php get_template_part( 'global-templates/extra', 'content' ); ?>
 
     <?php endif; ?>
 

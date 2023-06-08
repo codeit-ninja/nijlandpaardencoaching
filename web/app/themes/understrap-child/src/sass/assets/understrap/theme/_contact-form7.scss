@@ -15,7 +15,6 @@
 // keep a max width in case it is just the form and nothing else
 // we do not want a form spanning whole page
 .wpcf7 {
-  max-width: 600px;
   margin: 0 auto !important;
 
   // all inputs except radios and checkboxes inherit from form-control
@@ -42,8 +41,11 @@
 
   // submit button, inherit .btn and .btn-outline-primary classes.
   input[type=submit] {
+    width: auto;
+    float: right;
+
     @extend .btn;
-    @extend .btn-outline-primary;
+    @extend .btn-dark;
   }
 
   .wpcf7-form {

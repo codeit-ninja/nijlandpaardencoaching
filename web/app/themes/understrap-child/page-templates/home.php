@@ -9,6 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header();
+
 $container = get_theme_mod( 'understrap_container_type' );
 $featured_image = get_the_post_thumbnail();
 ?>
@@ -45,11 +46,11 @@ $featured_image = get_the_post_thumbnail();
 	</div><!-- #content -->
 
     <div class="container-image-full mt-5">
-        <div class="container">
-            <div class="row gap-0">
-                <div class="col-6 shape-seperator">
+        <div class="container text-white">
+            <div class="row g-5 align-items-center">
+                <div class="col-7 shape-seperator">
                     <header class="shape-seperator-header">
-                        <h4>Paardencoachen maakt je bewust van</h4>
+                        <h2>Paardencoachen maakt je bewust van</h2>
                     </header>
                     <section class="shape-seperator-content">
                         <ul class="npc-list">
@@ -64,41 +65,39 @@ $featured_image = get_the_post_thumbnail();
                         </ul>
                     </section>
                 </div>
-                <div class="col-6" style="background-image: url(https://www.nijlandpaardencoaching.nl/wp-content/themes/NijlandManage/images/IMG_1775.JPG);" id="container-image"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container container-shape bg-light">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="p-5">
-                    <?php the_field('coaching_points'); ?>
+                <div class="col-5 py-5">
+                    <img src="https://nijlandpaardencoaching.wordpress.test/app/uploads/2023/06/image.png" />
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-12 p-0">
-                <div class="d-flex contact-options">
-                    <a href="" class="col">
-                        <i class="fa-duotone fa-phone-rotary"></i>
-                        <span>Bel ons</span>
-                    </a>
-                    <a href="" class="col">
-                        <i class="fa-duotone fa-envelope"></i>
-                        <span>Mail ons</span>
-                    </a>
-                    <a href="" class="col">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>Simone Mijering</span>
-                    </a>
-                    <a href="" class="col">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>Diana van Eldik</span>
-                    </a>
+    <div class="container-full bg-medium">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="py-5">
+                        <?php the_field('coaching_points'); ?>
+
+                        <div class="d-flex contact-options mt-5 mb-3">
+                            <a href="" class="col">
+                                <i class="fa-duotone fa-phone-rotary"></i>
+                                <span>Bel ons</span>
+                            </a>
+                            <a href="" class="col">
+                                <i class="fa-duotone fa-envelope"></i>
+                                <span>Mail ons</span>
+                            </a>
+                            <a href="" class="col">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Simone Mijering</span>
+                            </a>
+                            <a href="" class="col">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Diana van Eldik</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

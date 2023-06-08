@@ -1,0 +1,60 @@
+@mixin caret-down {
+    content: "\f078";
+}
+
+@mixin caret-up {
+    content: "\f077";
+}
+
+@mixin caret-end {
+    content: "\f054";
+}
+
+@mixin caret-start {
+    content: "\f053";
+}
+
+@mixin caret($direction: down) {
+    display: flex !important;
+    align-items: center;
+
+    @if $enable-caret {
+        &::after {
+            display: inline-block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            margin-left: $caret-spacing;
+            font: var(--fa-font-regular);
+
+            @if $direction ==down {
+                @include caret-down();
+            }
+
+            @else if $direction ==up {
+                @include caret-up();
+            }
+
+            @else if $direction ==end {
+                @include caret-end();
+            }
+        }
+
+        @if $direction ==start {
+            &::after {
+                display: none;
+            }
+
+            &::before {
+                display: inline-block;
+                margin-right: $caret-spacing;
+                vertical-align: $caret-vertical-align;
+                content: "";
+                @include caret-start();
+            }
+        }
+
+        &:empty::after {
+            margin-left: 0;
+        }
+    }
+}

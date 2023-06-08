@@ -8,6 +8,8 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
+use function Env\env;
+
 /**
  * Add fontawesome to head
  */
@@ -183,3 +185,13 @@ function remove_breadcrumb_links( $link_output , $link ) {
     return $link_output;
 }
 add_filter('wpseo_breadcrumb_single_link' ,'remove_breadcrumb_links', 10 ,2);
+
+function my_acf_google_map_api( $api ) 
+{
+    
+    $api['key'] = env('GOOGLE_MAPS_API_KEY');
+    
+    return $api;
+    
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

@@ -10,21 +10,21 @@
     a {
         display: block;
         text-decoration: none;
-        color: $gray-600;
+        color: $dark;
         padding: 1rem 1.35rem;
         border-bottom: none;
     }
 
     .page_item {
-        background-color: $gray-100;
+        background-color: tint-color($dark, 81%);
         border-radius: $border-radius;
     }
 
     .current_page_item {
-        background-color: $gray-900;
+        background-color: $primary;
 
         a {
-            color: $white;
+            color: $body-bg;
             font-weight: 500;
         }
     }

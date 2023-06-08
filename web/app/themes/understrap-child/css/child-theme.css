@@ -12502,19 +12502,19 @@ body::before {
 #sidebar-nav a {
   display: block;
   text-decoration: none;
-  color: #616568;
+  color: #1d2327;
   padding: 1rem 1.35rem;
   border-bottom: none;
 }
 #sidebar-nav .page_item {
-  background-color: #e4e4e4;
+  background-color: #d4d5d6;
   border-radius: 0.375rem;
 }
 #sidebar-nav .current_page_item {
-  background-color: #1d2327;
+  background-color: #2bcec3;
 }
 #sidebar-nav .current_page_item a {
-  color: #fff;
+  color: #f3f3f3;
   font-weight: 500;
 }
 
@@ -12646,6 +12646,11 @@ picture:not(.no-outline)::after {
   top: 0.75rem;
   left: 0.75rem;
   z-index: -1;
+}
+
+.nav-pills {
+  gap: 0.5rem;
+  --bs-nav-pills-link-active-bg: #1d2327;
 }
 
 .has-blue-color,

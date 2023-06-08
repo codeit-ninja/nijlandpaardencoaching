@@ -1,0 +1,7 @@
+.nav {
+    &-pills {
+        gap: .5rem;
+        
+        --bs-nav-pills-link-active-bg: #{$dark};
+    }
+}

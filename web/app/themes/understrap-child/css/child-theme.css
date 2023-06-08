@@ -12626,15 +12626,15 @@ picture {
   margin-bottom: 1rem;
   border-radius: var(--bs-border-radius);
 }
-picture.with-overlay {
-  background: rgba(128, 226, 219, 0.2);
-}
-picture.with-overlay img {
-  mix-blend-mode: luminosity;
-}
 picture.no-outline {
   margin-right: 1.5rem;
   margin-bottom: 0.5rem;
+}
+picture:not(.no-overlay) {
+  background: rgba(128, 226, 219, 0.2);
+}
+picture:not(.no-overlay) img {
+  mix-blend-mode: luminosity;
 }
 picture:not(.no-outline)::after {
   position: absolute;

@@ -12136,7 +12136,7 @@ h6, .h6 {
   text-transform: uppercase;
 }
 
-a:not(.nav-link, .dropdown-item, [role=button]) {
+a:not(.nav-link, .dropdown-item, [role=button], .btn) {
   color: #4bd5cc;
   text-decoration: none;
   border-bottom: 1px dashed;

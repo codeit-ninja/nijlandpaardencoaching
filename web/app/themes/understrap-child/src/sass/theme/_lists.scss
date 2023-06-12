@@ -53,11 +53,12 @@
 
 ul:not(.navbar-nav, .dropdown, .dropdown-menu, .menu, .npc-list, .nav) {
     list-style: none;
+    padding-left: 0;
 
     li {
         position: relative;
         display: flex;
-        padding-left: 1rem;
+        padding-left: 3rem;
 
         &::before,
         &::after {
@@ -67,7 +68,7 @@ ul:not(.navbar-nav, .dropdown, .dropdown-menu, .menu, .npc-list, .nav) {
             -webkit-font-smoothing: antialiased;
             font: var(--fa-font-regular);
             font-size: 1rem;
-            left: -1rem;
+            left: 1rem;
             top: 5px;
             // transform: rotate(45deg);
         }
@@ -78,7 +79,7 @@ ul:not(.navbar-nav, .dropdown, .dropdown-menu, .menu, .npc-list, .nav) {
         // }
 
         &::after {
-            content: "\f6f0";
+            content: "\f068";
         }
     }
 }

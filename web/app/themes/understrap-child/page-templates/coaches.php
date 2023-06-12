@@ -20,7 +20,7 @@ $choaches = get_field('coaches');
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
-		<div class="row gap-4">
+		<div class="row gap-5">
 
 			<?php get_template_part( 'sidebar-templates/sidebar', 'left' ); ?>
 

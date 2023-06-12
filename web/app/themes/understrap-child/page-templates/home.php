@@ -22,7 +22,7 @@ $featured_image = get_the_post_thumbnail();
 
 			<div class="col-md-8 content-area" id="primary">
 
-				<main class="site-main test" id="main" role="main">
+				<main class="site-main border-start px-5" id="main" role="main">
 
 					<?php
 					while ( have_posts() ) {

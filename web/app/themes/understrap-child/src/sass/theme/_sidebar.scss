@@ -1,5 +1,15 @@
 #left-sidebar {
-    // ss
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: " ";
+        height: 100%;
+        width: 1px;
+        border-right: 1px solid $gray-300;
+        top: 0;
+        right: -1.5rem;
+    }
 }
 
 #sidebar-nav {
@@ -16,7 +26,7 @@
     }
 
     .page_item {
-        background-color: tint-color($dark, 81%);
+        background-color: $body-bg;
         border-radius: $border-radius;
     }
 

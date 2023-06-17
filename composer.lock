@@ -4,8 +4,36 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1660c454f12a2782b965f8dc45142b61",
+    "content-hash": "b94ba441fae5fb565cd0edb3b1fe6693",
     "packages": [
+        {
+            "name": "codeit-ninja/advanced-custom-fields-pro",
+            "version": "6.1.6",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:codeit-ninja/advanced-custom-fields.git",
+                "reference": "5b049a976bec81005bce6be63900fdfeeb978ba0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codeit-ninja/advanced-custom-fields/zipball/5b049a976bec81005bce6be63900fdfeeb978ba0",
+                "reference": "5b049a976bec81005bce6be63900fdfeeb978ba0",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://code-it-ninja.repo.repman.io/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://code-it-ninja.repo.repman.io/downloads",
+            "support": {
+                "source": "https://github.com/codeit-ninja/advanced-custom-fields/tree/v6.1.6",
+                "issues": "https://github.com/codeit-ninja/advanced-custom-fields/issues"
+            },
+            "time": "2023-06-16T12:39:54+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v2.2.0",
@@ -1117,6 +1145,78 @@
                 }
             ],
             "time": "2022-10-16T01:01:54+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "5.7.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/5.7.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.7.7.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/custom-post-type-ui",
+            "version": "1.13.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
+                "reference": "tags/1.13.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.6.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "20.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/20.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.20.9.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-map-block",
+            "version": "1.4.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-map-block/",
+                "reference": "tags/1.4.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-map-block.1.4.7.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-map-block/"
         },
         {
             "name": "wpackagist-theme/twentytwentythree",

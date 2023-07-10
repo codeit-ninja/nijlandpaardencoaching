@@ -17,8 +17,8 @@
 
         @include transition(.12s);
 
-        &:hover, 
-        &:active, 
+        &:hover,
+        &:active,
         &:hover:active {
             background-color: shade-color(#2BB741, 5%);
             color: $white;
@@ -54,5 +54,40 @@
             border-color: $white;
             background-color: inherit;
         }
+    }
+}
+
+// Hamburger menu icon
+.navbar-toggler {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    height: 60px;
+    width: 60px;
+    border: none;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: auto;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &::before,
+    &::after {
+        background-color: $dark;
+        content: " ";
+        height: 2px;
+    }
+
+    &::before {
+        width: 80%;
+    }
+
+    &::after {
+        width: 60%;
     }
 }

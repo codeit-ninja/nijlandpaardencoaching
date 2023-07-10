@@ -15,6 +15,7 @@ class Deployer
     {
         set('repository', trim(exec('git config --get remote.origin.url')));
         set('writable_recursive', true);
+        set('update_code_strategy', 'clone');
 
         add('shared_files', ['.env']);
         add('shared_dirs', [
@@ -55,6 +56,7 @@ class Deployer
         });
 
         task('codeit:migration', array( Migration::class, 'run' ) );
+        task('deploy:success', function () {});
 
         after('deploy:failed', 'deploy:unlock');
         after('codeit:deploy', 'codeit:migration');

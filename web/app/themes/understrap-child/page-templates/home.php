@@ -20,7 +20,7 @@ $featured_image = get_the_post_thumbnail();
 
 		<div class="row">
 
-			<div class="col-md-8 content-area" id="primary">
+			<div class="col-lg-8 content-area" id="primary">
 
 				<main class="site-main border-start px-5" id="main" role="main">
 

@@ -1,4 +1,6 @@
 .container {
+    --bs-gutter-x: 3rem;
+
     &-featured {
         background-color: $primary;
         color: $body-bg;

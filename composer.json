@@ -95,5 +95,10 @@
         "test": [
             "phpcs"
         ]
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeIT\\": "codeit/"
+        }
     }
 }

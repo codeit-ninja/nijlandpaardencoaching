@@ -91,3 +91,18 @@
         width: 60%;
     }
 }
+
+.btn-arrow {
+    position: absolute;
+    display: inline-block;
+    color: $white;
+    font-size: 1.6rem;
+    left: 2rem;
+    top: 2rem;
+    transition: all .12s ease-in-out;
+
+    &:hover {
+        color: $white;
+        left: 1.8rem;
+    }
+}

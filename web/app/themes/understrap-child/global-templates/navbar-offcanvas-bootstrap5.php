@@ -52,6 +52,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNavOffcanvas">
 
+                    <button
+                        class="btn btn-arrow"
+                        type="button"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="<?php esc_attr_e( 'Close menu', 'understrap' ); ?>"
+                    >
+                        ⟵
+                    </button>
+
                     <!-- The WordPress Menu goes here -->
                     <?php
                     wp_nav_menu(
@@ -70,21 +79,16 @@ $container = get_theme_mod( 'understrap_container_type' );
                         array(
                             'menu'            => 'Primary Mobile',
                             'theme_location'  => 'primary',
-                            'container_class' => 'offcanvas-body d-xl-none py-5',
+                            'container_class' => 'offcanvas-body d-xl-none',
                             'container_id'    => '',
                             'menu_class'      => 'navbar-nav gap-3 gap-xxl-4',
                             'fallback_cb'     => '',
                             'menu_id'         => 'mobile-menu',
                             'depth'           => 2,
+                            'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
                         )
                     );
                     ?>
-                    <!-- <button
-                        class="btn-close text-reset"
-                        type="button"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="<?php esc_attr_e( 'Close menu', 'understrap' ); ?>"
-                    ></button> -->
                 </div><!-- .offcanvas -->
             </div>
         </div>    

@@ -8,11 +8,11 @@
     //box-shadow: 0 0 .75rem -.3rem $gray-700;
     border-bottom: 5px solid $gray-200;
 
-    --bs-navbar-padding-y: .75rem;
-    --bs-navbar-padding-x: .75rem;
+    --#{$prefix}navbar-padding-y: .75rem;
+    --#{$prefix}navbar-padding-x: .75rem;
     
-    --bs-navbar-nav-link-padding-x: 1.35rem;
-    --bs-navbar-nav-link-padding-y: 1rem;
+    --#{$prefix}navbar-nav-link-padding-x: 1.35rem;
+    --#{$prefix}navbar-nav-link-padding-y: 1rem;
 }
 
 // Fix position if admin bar is visible
@@ -45,37 +45,65 @@
 }
 
 #mobile-menu {
-    color: $dark;
-    padding: 0 1rem;
+    text-align: right;
 
-    .menu-item {
-        a {
-            color: $body-color;
-            border-bottom: none;
-        }
+    .nav-link {
+        justify-content: flex-end;
+        font-family: $font-family-serif;
+        color: tint-color($dark, 45%) !important;
+    }
 
-        &-has-children {
-            margin-bottom: 1rem;
-
-            > a {
-                display: block;
-                font-weight: 500;
-                text-transform: uppercase;
-                color: $gray-400;
-                margin-bottom: 1rem;
-            }
-        }
-
-        &.current-menu-item {
-            a {
-                color: $primary;
+    .nav-item {
+        &.active {
+            .nav-link {
+                color: $primary !important;
             }
         }
     }
 
-    .sub-menu {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+    .dropdown-menu {
+        --#{$prefix}dropdown-zindex: 1000;
+        --#{$prefix}dropdown-min-width: auto;
+        --#{$prefix}dropdown-padding-x: 0;
+        --#{$prefix}dropdown-padding-y: 0;
+        --#{$prefix}dropdown-spacer: 0.125rem;
+        --#{$prefix}dropdown-font-size: #{$font-size-base};
+        --#{$prefix}dropdown-color: #{tint-color($dark, 45%)};
+        --#{$prefix}dropdown-bg: transparent;
+        --#{$prefix}dropdown-border-color: transparent;
+        --#{$prefix}dropdown-border-radius: 0;
+        --#{$prefix}dropdown-border-width: 1px;
+        --#{$prefix}dropdown-inner-border-radius: -1px;
+        --#{$prefix}dropdown-divider-bg: transparent;
+        --#{$prefix}dropdown-divider-margin-y: 0.5rem;
+        --#{$prefix}dropdown-box-shadow: none;
+        --#{$prefix}dropdown-link-hover-color: #{tint-color($dark, 55%)};
+        --#{$prefix}dropdown-link-hover-bg: transparent;
+        --#{$prefix}dropdown-link-active-color: #2bcec3;
+        --#{$prefix}dropdown-link-active-bg: transparent;
+        --#{$prefix}dropdown-link-disabled-color: #777b7d;
+        --#{$prefix}dropdown-item-padding-x: 1.5rem;
+        --#{$prefix}dropdown-item-padding-y: 1rem;
+        --#{$prefix}dropdown-header-color: #616568;
+        --#{$prefix}dropdown-header-padding-x: 1.5rem;
+        --#{$prefix}dropdown-header-padding-y: 0.5rem;
+    }
+
+    .dropdown-item {
+        font-weight: 500;
+        text-transform: none;
+        text-align: right;
+        
+        --#{$prefix}dropdown-link-color: #{tint-color($dark, 55%)};
+    }
+
+    .dropdown-menu {
+        .nav-item {
+            &.active {
+                .dropdown-item {
+                    color: $white !important;
+                }
+            }
+        }
     }
 }

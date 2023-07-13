@@ -1,3 +1,13 @@
+.offcanvas {
+    background-color: $dark;
+
+    --#{$prefix}offcanvas-width: 380px;
+
+    &-body {
+        padding: 6rem 3rem 3rem;
+    }
+}
+
 a.offcanvas-close {
     display: block;
     color: $body-color;

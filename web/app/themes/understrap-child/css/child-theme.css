@@ -12193,7 +12193,7 @@ blockquote::before {
 }
 .container-featured h3, .container-featured .h3 {
   margin-bottom: 2rem;
-  color: #209b92;
+  color: #18716b;
 }
 .container-footer {
   background-color: #34393d;
@@ -12321,12 +12321,13 @@ blockquote::before {
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font: var(--fa-font-regular);
+  font: var(--fa-font-solid);
   position: absolute;
   left: -2.5rem;
 }
 .npc-list li::after {
-  content: "\e404";
+  content: "\e426";
+  color: #1c867f;
 }
 @media (min-width: 576px) {
   .npc-list {
@@ -12576,6 +12577,11 @@ body::before {
   font-weight: 500;
 }
 
+@media (max-width: 991.98px) {
+  #left-sidebar::after {
+    display: none;
+  }
+}
 .dropdown-item {
   font-weight: 500;
   text-transform: uppercase;
@@ -12613,7 +12619,7 @@ body::before {
   color: #2bcec3 !important;
 }
 .nav-link {
-  color: #34393d !important;
+  color: #34393d;
   border-bottom: 0;
 }
 

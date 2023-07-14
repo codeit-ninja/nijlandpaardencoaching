@@ -22,8 +22,6 @@ $choaches = get_field('coaches');
 
 		<div class="row gap-5">
 
-			<?php get_template_part( 'sidebar-templates/sidebar', 'left' ); ?>
-
 			<div class="<?php echo is_active_sidebar( 'right-sidebar' ) ? 'col-md-8' : 'col-md-12'; ?> content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">

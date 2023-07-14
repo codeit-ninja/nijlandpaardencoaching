@@ -39,3 +39,11 @@
         }
     }
 }
+
+@include media-breakpoint-down(lg) {  
+    #left-sidebar {
+        &::after {
+            display: none;
+        }
+    }
+}

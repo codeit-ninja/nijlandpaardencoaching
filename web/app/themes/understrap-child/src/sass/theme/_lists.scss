@@ -24,7 +24,7 @@
         display: inline-block;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
-        font: var(--fa-font-regular);
+        font: var(--fa-font-solid);
         position: absolute;
         left: -2.5rem;
     }
@@ -35,7 +35,8 @@
     // }
 
     li::after {
-        content: "\e404";
+        content: "\e426";
+        color: shade-color($primary, 35%);
     }
 
     @include media-breakpoint-up(sm) {

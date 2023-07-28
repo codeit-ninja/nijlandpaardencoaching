@@ -12432,6 +12432,9 @@ body::before {
   flex-grow: 1;
 }
 
+.content-area {
+  margin-bottom: 2rem;
+}
 .content-area h2, .content-area .h2 {
   position: relative;
   margin-bottom: 2rem;
@@ -12538,6 +12541,10 @@ body::before {
   color: #18716b;
   text-decoration: none;
   border-bottom: 1px dashed #18716b;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 #left-sidebar {

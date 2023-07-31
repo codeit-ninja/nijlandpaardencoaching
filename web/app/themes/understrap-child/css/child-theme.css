@@ -12743,6 +12743,13 @@ iframe {
   margin: 0;
 }
 
+@media (max-width: 1199.98px) {
+  #wrapper-footer-full .wp-block-group.is-layout-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem !important;
+  }
+}
 picture {
   position: relative;
   margin-right: 2.5rem;

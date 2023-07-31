@@ -12817,6 +12817,11 @@ a.offcanvas-close {
   font-weight: bold;
 }
 
+@media (max-width: 1199.98px) {
+  .reference {
+    padding: 2rem 1.5rem;
+  }
+}
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

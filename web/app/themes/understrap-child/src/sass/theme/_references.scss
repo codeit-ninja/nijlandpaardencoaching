@@ -19,3 +19,9 @@
         font-weight: bold;
     }
 }
+
+@include media-breakpoint-down(xl) {
+    .reference {
+        padding: 2rem 1.5rem;
+    }
+}

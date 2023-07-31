@@ -12808,10 +12808,10 @@ a.offcanvas-close {
   border-radius: 0.375rem;
 }
 .reference:nth-child(even), .reference:nth-child(even) .reference-more {
-  background-color: #d5f5f3;
+  background-color: #e4e4e4;
 }
 .reference:nth-child(odd), .reference:nth-child(odd) .reference-more {
-  background-color: #e4e4e4;
+  background-color: #dff8f6;
 }
 .reference .read-more {
   font-weight: bold;

@@ -53,37 +53,6 @@ $featured_image = get_the_post_thumbnail();
     get_template_part('global-templates/home/block', 'footer');
     ?>
 
-    <!-- <div class="container-full bg-medium">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="py-5">
-                        <?php the_field('coaching_points'); ?>
-
-                        <div class="contact-options mt-5 mb-3">
-                            <a href="">
-                                <i class="fa-duotone fa-phone"></i>
-                                <span>Bel ons</span>
-                            </a>
-                            <a href="">
-                                <i class="fa-regular fa-at"></i>
-                                <span>Mail ons</span>
-                            </a>
-                            <a href="">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                <span>Simone Mijering</span>
-                            </a>
-                            <a href="">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                <span>Diana van Eldik</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
 </div><!-- #page-wrapper -->
 
 <?php

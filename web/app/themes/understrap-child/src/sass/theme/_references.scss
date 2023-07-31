@@ -1,0 +1,21 @@
+.reference {
+    position: relative;
+    max-width: 850px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    border-radius: $border-radius;
+
+    &:nth-child(even),
+    &:nth-child(even) .reference-more {
+        background-color: tint-color($primary, 80%);
+    }
+
+    &:nth-child(odd),
+    &:nth-child(odd) .reference-more {
+        background-color: $gray-100;
+    }
+
+    .read-more {
+        font-weight: bold;
+    }
+}

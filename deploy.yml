@@ -8,3 +8,4 @@ hosts:
         deploy_path: /srv/sites/nijlandpaardencoaching
         repository: 'git@github.com:codeit-ninja/nijlandpaardencoaching.git'
         update_code_strategy: clone
+        http_user: caddy

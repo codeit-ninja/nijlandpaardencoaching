@@ -13,9 +13,9 @@ use function Env\env;
 /**
  * Add fontawesome to head
  */
-function init_fontawesome() 
+function init_fontawesome()
 {
-    echo '<script src="'.  get_stylesheet_directory_uri() .'/src/js/fontawesome.js"></script>';
+    echo '<script src="' . get_stylesheet_directory_uri() . '/src/js/fontawesome.js"></script>';
 }
 add_action('wp_head', 'init_fontawesome');
 
@@ -139,59 +139,95 @@ function add_secondary_logo_field(WP_Customize_Manager $wp_customize)
                 'priority' => 10,
                 'section' => 'title_tagline',
             )
-        ));
+        )
+    );
 }
 add_action('customize_register', 'add_secondary_logo_field');
 
-function the_quote() 
+function the_quote()
 {
     $quotes = get_field('quotes', 'option');
-    
+
     // Find quote that belongs to current page object
-    foreach( $quotes as $quote ) {
-        if( $quote['show_only_on_selected_page'] 
-              && ! empty( $quote['post_id'] ) 
-              && in_array( get_the_ID(), $quote['post_id'] ) 
+    foreach ($quotes as $quote) {
+        if (
+            $quote['show_only_on_selected_page']
+            && !empty($quote['post_id'])
+            && in_array(get_the_ID(), $quote['post_id'])
         ) {
-            echo '<blockquote>'. $quote['text'] .'</blockquote>'; return;
+            echo '<blockquote>' . $quote['text'] . '</blockquote>';
+            return;
         }
     }
 
-    echo '<blockquote>'. $quotes[rand(0, (count($quotes) - 1))]['text'] .'</blockquote>';
+    echo '<blockquote>' . $quotes[rand(0, (count($quotes) - 1))]['text'] . '</blockquote>';
 }
 
 /**
  * Disable the block editor when specified
  */
-function disable_block_editor_check( $use_block_editor, WP_Post $post ) 
+function disable_block_editor_check($use_block_editor, WP_Post $post)
 {
 
-    if( get_field('disable_gutenberg', $post->ID) ) {
+    if (get_field('disable_gutenberg', $post->ID)) {
         return false;
     }
 
     return $use_block_editor;
 }
-add_filter( 'use_block_editor_for_post', 'disable_block_editor_check', 10, 2 );
+add_filter('use_block_editor_for_post', 'disable_block_editor_check', 10, 2);
 
 /**
  * Remove breadcrumbs links
  */
-function remove_breadcrumb_links( $link_output , $link ) {
-    if( get_pages( array( 'child_of' => $link['id'] ) ) ) {
-        return '<span>'. $link['text'] .'</span>';
+function remove_breadcrumb_links($link_output, $link)
+{
+    if (get_pages(array('child_of' => $link['id']))) {
+        return '<span>' . $link['text'] . '</span>';
     }
 
     return $link_output;
 }
-add_filter('wpseo_breadcrumb_single_link' ,'remove_breadcrumb_links', 10 ,2);
+add_filter('wpseo_breadcrumb_single_link', 'remove_breadcrumb_links', 10, 2);
 
-function my_acf_google_map_api( $api ) 
+function my_acf_google_map_api($api)
 {
-    
+
     $api['key'] = env('GOOGLE_MAPS_API_KEY');
-    
+
     return $api;
-    
+
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+add_action('phpmailer_init', 'mailer_config', 10, 1);
+function mailer_config(\PHPMailer\PHPMailer\PHPMailer $mailer)
+{
+    $mailer->IsSMTP();
+    $mailer->Host = "smtp-relay.brevo.com"; // your SMTP server
+    $mailer->Port = 587;
+    $mailer->SMTPSecure = 'tls';
+    $mailer->Username = 'info@nijlandpaardencoaching.nl';
+    $mailer->Password = 'Z7bS46CXtAGDL9H2';
+    $mailer->SMTPDebug = 3; // write 0 if you don't want to see client/server communication in page
+    $mailer->CharSet = "utf-8";
+}
+// add_filter( 'pre_wp_mail', function($null, $atts) {
+//     $config = Brevo\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', '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');
+//     $apiInstance = new Brevo\Client\Api\TransactionalEmailsApi(
+//         new GuzzleHttp\Client(),
+//         $config
+//     );
+//     $email = new Brevo\Client\Model\SendSmtpEmail();
+
+//     $apiInstance->sendTransacEmail( $email );
+
+//     // Add your code here
+//     print_r($atts);
+//     return false;
+// }, 10, 2);
+
+// // Skip sending email as we are sending the email ourselfs
+// add_action("wpcf7_before_send_mail", function(WPCF7_ContactForm $wpcf) {
+//     add_filter('wpcf7_skip_mail', fn() => true);
+// });  

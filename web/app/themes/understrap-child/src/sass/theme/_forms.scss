@@ -1,0 +1,26 @@
+.wpcf7 {
+    &-not-valid {
+        border-color: $danger !important;
+
+        &-tip {
+            font-weight: 500;
+            font-size: 1rem;
+            margin-top: .5rem;
+        }
+    }
+
+    form {
+        .wpcf7-response-output {
+            margin: 3rem 0 0;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-left: 5px solid;
+        }
+
+        &.invalid {
+            .wpcf7-response-output {
+                border-color: $dark;
+            }
+        }
+    }
+}

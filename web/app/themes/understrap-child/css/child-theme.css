@@ -12800,6 +12800,24 @@ a.offcanvas-close {
   margin-top: 1rem;
 }
 
+.wpcf7-not-valid {
+  border-color: #dc3545 !important;
+}
+.wpcf7-not-valid-tip {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.wpcf7 form .wpcf7-response-output {
+  margin: 3rem 0 0;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-left: 5px solid;
+}
+.wpcf7 form.invalid .wpcf7-response-output {
+  border-color: #1d2327;
+}
+
 .reference {
   position: relative;
   max-width: 850px;

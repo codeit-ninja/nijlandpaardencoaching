@@ -12291,8 +12291,8 @@ blockquote::before {
   top: 2rem;
   transition: all 0.12s ease-in-out;
 }
-.btn-arrow:hover {
-  color: #fff;
+.btn-arrow:active, .btn-arrow:hover, .btn-arrow:hover:focus {
+  color: #fff !important;
   left: 1.8rem;
 }
 
@@ -12800,6 +12800,11 @@ a.offcanvas-close {
   margin-top: 1rem;
 }
 
+@media (max-width: 767.98px) {
+  .offcanvas {
+    --bs-offcanvas-width: 100%;
+  }
+}
 .wpcf7-not-valid {
   border-color: #dc3545 !important;
 }

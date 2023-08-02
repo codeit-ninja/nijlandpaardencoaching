@@ -16,3 +16,9 @@ a.offcanvas-close {
     font-size: 3rem;
     margin-top: 1rem;
 }
+
+@include media-breakpoint-down(md) {  
+    .offcanvas {
+        --#{$prefix}offcanvas-width: 100%;
+    }
+}

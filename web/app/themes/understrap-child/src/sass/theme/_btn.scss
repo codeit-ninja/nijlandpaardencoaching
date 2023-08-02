@@ -101,8 +101,10 @@
     top: 2rem;
     transition: all .12s ease-in-out;
 
-    &:hover {
-        color: $white;
+    &:active,
+    &:hover,
+    &:hover:focus {
+        color: $white !important;
         left: 1.8rem;
     }
 }

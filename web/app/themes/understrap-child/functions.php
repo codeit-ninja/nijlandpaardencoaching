@@ -204,11 +204,12 @@ add_action('phpmailer_init', 'mailer_config', 10, 1);
 function mailer_config(\PHPMailer\PHPMailer\PHPMailer $mailer)
 {
     $mailer->IsSMTP();
-    $mailer->Host = "smtp-relay.brevo.com"; // your SMTP server
+    $mailer->SMTPAuth = true;
+    $mailer->Host = "mail.codeit.website"; // your SMTP server
     $mailer->Port = 587;
     $mailer->SMTPSecure = 'tls';
-    $mailer->Username = 'info@nijlandpaardencoaching.nl';
-    $mailer->Password = 'Z7bS46CXtAGDL9H2';
+    $mailer->Username = 'richard@codeit.ninja';
+    $mailer->Password = 'Creative12!@';
     $mailer->SMTPDebug = 3; // write 0 if you don't want to see client/server communication in page
     $mailer->CharSet = "utf-8";
 }

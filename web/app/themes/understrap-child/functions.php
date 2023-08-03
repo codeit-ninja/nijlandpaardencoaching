@@ -207,12 +207,12 @@ function mailer_config(\PHPMailer\PHPMailer\PHPMailer $mailer)
     $mailer->Mailer = 'smtp';
     $mailer->SMTPAuth = true;
     $mailer->SMTPKeepAlive = true; 
-    $mailer->Host = "mail.codeit.website"; // your SMTP server
+    $mailer->Host = "smtp.code-it.ninja"; // your SMTP server
     $mailer->Port = 587;
-    $mailer->Username = 'richard@codeit.ninja';
-    //$mailer->Username = 'unforgivencoffeecake';
-    $mailer->Password = 'Creative12!@';
-    //$mailer->Password = '#Ntc&^6YEQe%$d$FSXKU';
+    //$mailer->Username = 'richard@codeit.ninja';
+    $mailer->Username = 'unforgivencoffeecake';
+    //$mailer->Password = 'Creative12!@';
+    $mailer->Password = '#Ntc&^6YEQe%$d$FSXKU';
     $mailer->SMTPSecure = 'tls';
     $mailer->SMTPDebug = 2; // write 0 if you don't want to see client/server communication in page
     $mailer->CharSet = "utf-8";

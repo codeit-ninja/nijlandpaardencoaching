@@ -204,26 +204,20 @@ add_action('phpmailer_init', 'mailer_config', 10, 1);
 function mailer_config(\PHPMailer\PHPMailer\PHPMailer $mailer)
 {
     $mailer->IsSMTP();
+    $mailer->Mailer = 'smtp';
     $mailer->SMTPAuth = true;
+    $mailer->SMTPKeepAlive = true; 
     $mailer->Host = "mail.codeit.website"; // your SMTP server
     $mailer->Port = 587;
-    $mailer->SMTPSecure = 'tls';
     $mailer->Username = 'richard@codeit.ninja';
+    //$mailer->Username = 'unforgivencoffeecake';
     $mailer->Password = 'Creative12!@';
-    $mailer->SMTPDebug = 3; // write 0 if you don't want to see client/server communication in page
+    //$mailer->Password = '#Ntc&^6YEQe%$d$FSXKU';
+    $mailer->SMTPSecure = 'tls';
+    $mailer->SMTPDebug = 2; // write 0 if you don't want to see client/server communication in page
     $mailer->CharSet = "utf-8";
 }
 // add_filter( 'pre_wp_mail', function($null, $atts) {
-//     $config = Brevo\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', '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');
-//     $apiInstance = new Brevo\Client\Api\TransactionalEmailsApi(
-//         new GuzzleHttp\Client(),
-//         $config
-//     );
-//     $email = new Brevo\Client\Model\SendSmtpEmail();
-
-//     $apiInstance->sendTransacEmail( $email );
-
-//     // Add your code here
 //     print_r($atts);
 //     return false;
 // }, 10, 2);

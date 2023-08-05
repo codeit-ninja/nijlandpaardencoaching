@@ -23,6 +23,9 @@ web/.htaccess
 # Composer
 /vendor
 
+# MySQL
+.sql
+
 # WP-CLI
 wp-cli.local.yml
 deploy.php

@@ -8,4 +8,12 @@ hosts:
         deploy_path: /srv/sites/nijlandpaardencoaching
         repository: 'git@github.com:codeit-ninja/nijlandpaardencoaching.git'
         update_code_strategy: clone
-        http_user: caddy
+        http_user: www-data
+    production:
+        hostname: 185.208.207.112
+        remote_user: codeit
+        domain: nijlandpaardencoaching
+        deploy_path: /srv/nijlandpaardencoaching.nl
+        repository: 'git@github.com:codeit-ninja/nijlandpaardencoaching.git'
+        update_code_strategy: clone
+        http_user: www-data

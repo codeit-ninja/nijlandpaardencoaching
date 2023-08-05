@@ -199,24 +199,6 @@ function my_acf_google_map_api($api)
 
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
-
-add_action('phpmailer_init', 'mailer_config', 10, 1);
-function mailer_config(\PHPMailer\PHPMailer\PHPMailer $mailer)
-{
-    $mailer->IsSMTP();
-    $mailer->Mailer = 'smtp';
-    $mailer->SMTPAuth = true;
-    $mailer->SMTPKeepAlive = true; 
-    $mailer->Host = "smtp.code-it.ninja"; // your SMTP server
-    $mailer->Port = 587;
-    //$mailer->Username = 'richard@codeit.ninja';
-    $mailer->Username = 'unforgivencoffeecake';
-    //$mailer->Password = 'Creative12!@';
-    $mailer->Password = '#Ntc&^6YEQe%$d$FSXKU';
-    $mailer->SMTPSecure = 'tls';
-    $mailer->SMTPDebug = 2; // write 0 if you don't want to see client/server communication in page
-    $mailer->CharSet = "utf-8";
-}
 // add_filter( 'pre_wp_mail', function($null, $atts) {
 //     print_r($atts);
 //     return false;

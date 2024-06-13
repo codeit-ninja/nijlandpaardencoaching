@@ -1,8 +1,15 @@
+[variables]
+NODE_ENV = 'production'
+
 [phases.setup]
 nixPkgs = ['wp-cli', "pnpm-8_x", "nodejs_18"]
 
 [phases.install]
-cmds = ['cd $(wp theme path --allow-root --quiet --exec="error_reporting(0);")/$(wp option get stylesheet --allow-root --exec="error_reporting(0);")', 'pnpm install']
+cmds = [
+  'composer install --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --optimize-autoloader',
+  'cd $(wp theme path --allow-root --quiet --exec="error_reporting(0);")/$(wp option get stylesheet --allow-root --exec="error_reporting(0);")', 
+  'pnpm install'
+]
 
 [phases.build]
 cmds = ['cd $(wp theme path --allow-root --quiet --exec="error_reporting(0);")/$(wp option get stylesheet --allow-root --exec="error_reporting(0);")', 'pnpm run dist']

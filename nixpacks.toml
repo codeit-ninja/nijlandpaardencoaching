@@ -1,5 +1,8 @@
 [phases.setup]
-nixPkgs = ['wp-cli', 'pnpm']
+nixPkgs = ['wp-cli', "pnpm-8_x", "nodejs_18"]
+
+[phases.install]
+cmds = ['cd /app/web/themes/understrap-child', 'pnpm install']
 
 [phases.build]
 cmds = ['cd /app/web/themes/understrap-child', 'pnpm run dist']

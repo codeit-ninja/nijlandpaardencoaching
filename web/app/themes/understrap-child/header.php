@@ -19,6 +19,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'offcanvas' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <script defer src="https://umami-g0skwk4.185.208.207.112.sslip.io/script.js" data-website-id="b88e9b27-4fac-4872-81f8-10088c589daa"></script>
 	<?php wp_head(); ?>
 </head>
 

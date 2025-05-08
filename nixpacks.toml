@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ['wp-cli', "pnpm-10_x", "nodejs_22"]
+nixPkgs = ['wp-cli', "pnpm_10", "nodejs_22"]
 
 [phases.build]
 cmds = [
